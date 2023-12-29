@@ -1,6 +1,6 @@
 # Web Blog Website
 
-This is a simple web blog application that allows users to create, view, edit, and delete blog posts.
+This is a simple web blog application that allows users to create, view, edit, and delete blog posts. There is still no database that is connected as of now.
 
 ## Features
 
