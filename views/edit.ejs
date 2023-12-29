@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+    <% if (locals.existedData && locals.data && locals.index){ %>
+        <form action="/save" method="POST">
+            <% let stored=data %>
+            <input type="text" name="title" class="form-input" placeholder="Title" value="<%= data[index][0] %>" />
+            <textarea name="content" class="form-input" placeholder="Content"><%= data[index][1] %></textarea>
+            <input type="hidden" name="index" value="<%= index %>">
+            <input type="submit" value="SAVE" />
+        </form>
+    <% } %>
+<%- include("partials/footer.ejs") %>
